@@ -96,8 +96,9 @@ $(document).ready(function (e) {
     var share_title = encodeURIComponent(document.title);
     var share_pic = "../../../img/cs/500x300b.png" /*tpa=http://www.jq22.com/img/cs/500x300b.png*/ ;
     var share_from = encodeURIComponent("jQuery插件库");
+    // QQ分享
     $('#Share li a.share1').click(function (e) {
-        window.open("http://v.t.qq.com/share/share.php?url=" + share_url + "&title=" + share_title + "&pics=" + share_pic + "&site=" + share_from + "", "newwindow");
+        window.open(/* "http://v.t.qq.com/share/share.php?url=" */ + share_url + "&title=" + share_title + "&pics=" + share_pic + "&site=" + share_from + "", "newwindow");
     });
 
     // images/gbRes_3.png
@@ -137,7 +138,7 @@ $(document).ready(function (e) {
                 colorLight: "#ffffff",
                 correctLevel: QRCode.CorrectLevel.H
             });
-        }!!$('.qrcode_msg').length || $("#qrcode").append('<p class="t_c qrcode_msg">点击右上角【...】开始分享</p><a class="weixin_close" href="javascript:;">暂不分享</a>')
+        }!!$('.qrcode_msg').length || $("#qrcode").append('<p class="t_c qrcode_msg"></p><a class="weixin_close" href="javascript:;">暂不分享</a>')
         $('.Smohan_Layer_box').animate({
             'margin-top': '-200px',
         }).fadeOut(300)

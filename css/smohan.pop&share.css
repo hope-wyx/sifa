@@ -221,7 +221,7 @@ h4 a {
 
 .qrcode {
     width: 180px;
-    height: 240px;
+    height: 220px;
     padding: 20px;
     position: fixed;
     left: 50%;
@@ -245,5 +245,6 @@ h4 a {
     line-height: 30px;
     text-align: center;
     color: #fff;
-    text-decoration: none
+    text-decoration: none;
+    margin-top: .4rem;
 }
